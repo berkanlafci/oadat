@@ -7,7 +7,7 @@ Paper: Link to paper will be made available after publication.
 
 Dataset: Link to dataset will be made available after publication.
 
-Documentation Website:  
+Documentation Website: Will be public soon.
 
 Features
 -------------------------------------------------------
@@ -22,6 +22,7 @@ Dataset
 
 **Experimental Data**  
 
+Experimental data contains raw signals with different transducer arrays and reconstructed OA images with different settings.
 
 **Simulated Data**  
 
@@ -42,13 +43,13 @@ Positions of all array elements are included in the oadat, under arrays subfolde
 
 **Semi Circle**  
 
-Clinical Semi Circle (256 transducer elements), Sparse 128, 64 and 32
+The clinical images acquired with semi circle array are reconstructed using full semi circle (256 transducer elements), sparse 128 (uniform sparsity), sparse 64 (uniform sparsity), sparse 32 (uniform sparsity) and limited view 128 (90 degrees angular coverage).
 
 **Multisegment**  
 
-Clinical Mutisegment (256 transducer elements) and Linear (128 Elements)
+The clinical images acquired with multisegment array are reconstructed using full multisegment (256 transducer elements) and linear part (128 transducer elements).
 
-Simulated Mutisegment (256 transducer elements) and Linear (128 Elements)
+The synthetic images simulated with multisegment array are reconstructed using full multisegment (256 transducer elements) and linear part (128 transducer elements).
 
 **Virtual Circle**  
 
