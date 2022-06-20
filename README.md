@@ -3,7 +3,7 @@ OADAT
 
 OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing
 
-Paper: Link to paper will be made available after publication.
+Paper: [arXiv](https://arxiv.org/abs/2206.08612)
 
 Dataset: Link to dataset will be made available after publication.
 
