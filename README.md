@@ -80,7 +80,7 @@ Please cite to this work using the following Bibtex entry:
   publisher = {arXiv},
   year = {2022},
   copyright = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
-  journal={arXiv preprint arXiv:2206.08612},
+  journal={arXiv preprint arXiv:2206.08612}
 }
 ```
 
