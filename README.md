@@ -4,7 +4,7 @@ OADAT
 
 OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing
 
-Dataset: Will be public in [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/handle/20.500.11850/551512) upon paper acceptance. [!License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+Dataset: Will be public in [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/handle/20.500.11850/551512) upon paper acceptance. [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Documentation Website: Will be public soon.
 
