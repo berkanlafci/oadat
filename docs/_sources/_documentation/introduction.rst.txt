@@ -1,0 +1,16 @@
+
+===================================================
+Introduction
+===================================================
+
+Optoacoustic (OA) imaging is based on excitation of biological tissues with nanosecond-duration laser pulses followed by subsequent detection of ultrasound waves generated via light-absorption-mediated thermoelastic expansion. The rich optical contrast from endogenous tissue chromophores such as blood, melanin, lipids and others are combined with high US resolution, i.e., tens of micrometers. This unique feature makes OA particularly suitable for molecular and functional imaging.
+
+OA imaging has been shown to provide unique capabilities in preclinical studies with disease models and in clinical studies. However, no standardized datasets generated with different types of experimental set-up and associated processing methods are available to facilitate advances in broader applications of OA in clinical settings. This complicates an objective comparison between new and established data processing methods, often leading to qualitative results and arbitrary interpretations of the data.
+
+| Here, we provide experimental data and simulations of forearm datasets as well as benchmark networks aiming at facilitating the development of new image processing algorithms and benchmarking. The "Experimental and Synthetic Clinical Optoacoustic Data (OADAT)" provides followings:
+
+| 1. large and varied clinical and simulated forearm datasets with paired subsampled or limited view image reconstruction counterparts
+| 2. raw signal acquisition data of each such image reconstruction
+| 3. definition of 18 experiments with gold standards focusing on the aforementioned OA challenges
+| 4. pretrained model weights of the networks used for each task
+| 5. user-friendly scripts to load and evaluate the networks on our datasets.

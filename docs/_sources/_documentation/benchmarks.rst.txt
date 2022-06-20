@@ -1,0 +1,30 @@
+
+===================================================
+Benchmarks
+===================================================
+
+We define 18 experiments based on 3 tasks (sparse reconstructions, limited view corrections and segmentation). Sparse sampling and limited view corrections are grouped under image translation task.
+
+------------------------------------------------------------
+Image Translation
+------------------------------------------------------------
+
+Through a list of permutations of our datasets, we can define several pairs of varying difficulty of image translation experiments where target images are also available.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Sparse Reconstructions
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+We present sparse reconstructions of both single wavelength forearm dataset (SWFD) and simulated cylinders dataset (SCD) for semi circle and virtual ring arrays. Accordingly, sparse sampling correction experiments learn mapping functions where the task is correction of sparse sampling (ss) artifacts from the reduced number of elements used for image reconstruction with different array geometries. 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Limited View
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Further, we offer limited view reconstructions for all datasets and for all arrays.  Accordingly, limited view correction experiments learn mapping functions where the task is correction of limited view (lv) artifacts from the reduced angular coverage used for image reconstruction with different array geometries.
+
+------------------------------------------------------------
+Segmentation
+------------------------------------------------------------
+
+Simulated cylinders dataset (SCD) includes pixel annotations for skin curve, vessels and background. In addition to segmentation of these structures on the ideal reconstructions, we define segmentation task on sparse sampling and limited view reconstructions that contain the relevant artifacts encountered in experimental data. All data in segmentation task is generated from SCD and the objective is to match the ground truth annotations of the acoustic pressure map. 

@@ -1,0 +1,16 @@
+
+oadat documentation!
+====================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   _documentation/introduction
+   _documentation/datasets
+   _documentation/simulation
+   _documentation/benchmarks
+   _documentation/reconstruction
+   _documentation/arrays
+   _documentation/readers
+   _documentation/licenses

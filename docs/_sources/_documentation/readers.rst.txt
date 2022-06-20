@@ -1,0 +1,6 @@
+
+===================================================
+Data Readers
+===================================================
+
+We provide scripts to read both raw signal and image data from presented data format. The example scripts can be found in `oadat-evaluate <https://renkulab.io/gitlab/firat.ozdemir/oadat-evaluate/-/tree/master/notebooks>`_.

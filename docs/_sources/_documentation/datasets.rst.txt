@@ -1,0 +1,27 @@
+
+=================
+Datasets
+=================
+
+We present three datasets (two experimental, one simulated) where each has several subcategories for the purpose of tackling different challenges present in the domain. Raw signal acquisition data that is used to reconstruct all images are also provided with the datasets.
+
+------------------------------------------------------------
+Multispectral Forearm Dataset
+------------------------------------------------------------
+
+Multispectral forearm dataset (MSFD) is collected using multisegment array from nine volunteers at six different wavelengths (700, 730, 760, 780, 800, 850 nm) for both arms. Selected wavelengths are particularly aimed for spectral decomposition aiming to separate oxy- and deoxy-hemoglobin. All wavelengths are acquired consecutively, yielding almost identical scene being captured for a given slice across different wavelengths with slight displacement errors. For each of the mentioned category 1,400 slices are captured, creating a sum of 9 x 6 x 2 x 1400 = 151 200 unique signal matrices.
+
+------------------------------------------------------------
+Single Wavelength Forearm Dataset
+------------------------------------------------------------
+
+Single wavelength forearm dataset (SWFD) is collected using both multisegment and semi circle arrays from 14 volunteers at a single wavelength (1064 nm) for both arms.  The choice of the wavelength is based on maximizing penetration depth for the dataset. Out of the 14 volunteers, eight of them have also participated in the MSFD experiment and their unique identifiers match across the dataset files. For each array, volunteer, and arm, we acquired 1400 slices, creating a sum of 2 x 14 x 2 x 1400 = 78 400 unique signal matrices. It is important to note that despite the data being acquired from the same volunteers, signals between multisegment array and semi circle array are not paired due to physical constraints.
+
+------------------------------------------------------------
+Simulation Data
+------------------------------------------------------------
+
+Simulated cylinders dataset (SCD) is a group of synthetically generated 20 000 forearm acoustic pressure map images that we heuristically produced based on a range of criteria we observed in experimental images. The acoustic pressure maps are generated at a 256 x 256 resolution where skin curves and afterwards a random amount of ellipses with different intensity profiles are generated iteratively for a given image. Based on the acoustic pressure map, we generate its annotation map with three labels, corresponding to background, vessels, and skin curve. For each acoustic pressure map, we generate signal matrices for the geometries of linear, multisegment and virtual circle arrays. 
+
+Using linear and multisegment array signals, we use backprojection algorithm to reconstruct (i) linear array images and (ii) multisegment array images. From virtual circle array signals, we use backprojection algorithm to reconstruct (i) virtual circle images, (ii) virtual circle limited 128 images, (iii) virtual circle sparse 128 images, (iv) virtual circle sparse 64 images, and (v) virtual circle sparse 32 images, where each dataset has 20 000 images of 256 x 256 resolution. All seven image reconstruction variations of SCD have corresponding pairs for each of the 20k image; i.e., produced from the same acoustic pressure map. 
+
