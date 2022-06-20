@@ -70,10 +70,19 @@ Image reconstruction algorithms used in this project are included in the followi
 Citation
 -------------------------------------------------------
 
-If you use this data in your research, please cite the following paper:
-
-Lafci, B., Ozdemir, F., Dean-Ben, X.L., Razansky, D., Perez-Cruz, F., "OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing", (2022).
-
+Please cite to this work using the following Bibtex entry:
+```
+@article{lafci2022oadat,
+  doi = {10.48550/ARXIV.2206.08612},
+  url = {https://arxiv.org/abs/2206.08612},
+  author = {Lafci, Berkan and Ozdemir, Firat and Deán-Ben, Xosé Luís and Razansky, Daniel and Perez-Cruz, Fernando},
+  title = {{OADAT}: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
+  journal={arXiv preprint arXiv:2206.08612},
+}
+```
 
 License
 -------------------------------------------------------
