@@ -1,12 +1,9 @@
 OADAT
 =======================================================
-
-OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing
-
 [![arXiv](https://img.shields.io/badge/preprint-arXiv-b31b1b.svg)](https://arxiv.org/abs/2206.08612)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) 
 
-Paper: [arXiv Link](https://arxiv.org/abs/2206.08612)
+OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing
 
 Dataset: Will be public in [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/handle/20.500.11850/551512) upon paper acceptance.
 
