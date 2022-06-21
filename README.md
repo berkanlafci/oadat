@@ -1,8 +1,8 @@
 OADAT
 =======================================================
 [![arXiv](https://img.shields.io/badge/preprint-arXiv-b31b1b.svg)](https://arxiv.org/abs/2206.08612)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Documentation](https://img.shields.io/badge/Documentation-OADAT-brightgreen)](https://berkanlafci.github.io/oadat/)  
+[![Documentation](https://img.shields.io/badge/Documentation-OADAT-brightgreen)](https://berkanlafci.github.io/oadat/)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)  
 
 OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing
 
