@@ -3,6 +3,8 @@
 Introduction
 ===================================================
 
+This is the documentation website for the following paper: `OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing <https://arxiv.org/abs/2206.08612>`_.
+
 Optoacoustic (OA) imaging is based on excitation of biological tissues with nanosecond-duration laser pulses followed by subsequent detection of ultrasound waves generated via light-absorption-mediated thermoelastic expansion. The rich optical contrast from endogenous tissue chromophores such as blood, melanin, lipids and others are combined with high US resolution, i.e., tens of micrometers. This unique feature makes OA particularly suitable for molecular and functional imaging.
 
 OA imaging has been shown to provide unique capabilities in preclinical studies with disease models and in clinical studies. However, no standardized datasets generated with different types of experimental set-up and associated processing methods are available to facilitate advances in broader applications of OA in clinical settings. This complicates an objective comparison between new and established data processing methods, often leading to qualitative results and arbitrary interpretations of the data.
