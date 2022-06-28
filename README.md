@@ -29,6 +29,10 @@ Experimental data contains raw signals with different transducer arrays and reco
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/semiCircleImages_v1.png" width="1000" height="180">
 
+Multisegment and linear array images  
+
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/multisegmentImages_v1.png" width="335" height="180">
+
 ### Simulated Data
 
 Scripts used to generate simulated acoustic pressure maps are available here: [OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)
@@ -47,7 +51,7 @@ Distribution of features in simulated data are summarized in the figure below. T
 - number of vessels distribution in each image,  
 - PSNR values compared to full sampling virtual circle reconstructions (artifact free images).
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedDataStatistics_v1.png" width="1000" height="250">
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedDataStatistics_v1.png" width="700" height="215">
 ms = multisegment ||
 vc, ss128 = virtual circle, sparse 128 ||
 vc, ss64 = virtual circle, sparse 64 ||
@@ -59,19 +63,23 @@ linear = linear part of multisegment array
 
 Positions of all array elements are included in the oadat, under arrays subfolder.
 
-### Semi Circle
-
-The clinical images acquired with semi circle array are reconstructed using full semi circle (256 transducer elements), sparse 128 (uniform sparsity), sparse 64 (uniform sparsity), sparse 32 (uniform sparsity) and limited view 128 (90 degrees angular coverage).
-
-### Multisegment
-
-The clinical images acquired with multisegment array are reconstructed using full multisegment (256 transducer elements) and linear part (128 transducer elements).
-
-The synthetic images simulated with multisegment array are reconstructed using full multisegment (256 transducer elements) and linear part (128 transducer elements).
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/transducerArrays_v1.png" width="800" height="210">
 
 ### Virtual Circle
 
 The array is generated to simulate images with 360 degree angular coverage which results in artifact free reconstructions. It contains 1024 transducer elements distributed over a full circle with equal distance. The radius of the transducer array is kept equal to semi circle array (40 mm) to allow comparison between simulations and experimental acquisitions.
+
+### Semi Circle
+
+The array contains 256 piezocomposite transducers distributed over a semi circle (concave surface) equidistantly with the radius of 40 mm. The single transducer elements have dimensions of 0.37 mm x 15 mm with inter-element distance of 0.10 mm. This configuration of transducer elements results in cylindrical (toroidal) focusing at 38 mm (close to the center of the array). The central peak frequency of array is 5 MHz with 60% bandwidth at -6dB.
+
+### Multisegment
+
+The array is formed by the combination of a linear detector array and concave parts on the right and left sides. The linear part contains 128 elements distributed on a linear surface with inter-element pitch size of 0.25 mm. Both of the concave parts include 64 elements which make the total number of elements equal to 256 (128 linear + 128 concave). The inter-element pitch size of concave part is 0.6 mm with 40 mm radius of curvature. The height of all elements are equal to 10 mm. Concave parts are designed to increase angular coverage in OA imaging. This configuration results in a cylindrical focusing at 38 mm close to the center of the array. The array has 7.5 MHz central frequency with 70% bandwidth at -6 dB.
+
+### Linear
+
+The array is central part of the multisegment array with 128 transducer elements distributed over a line with pitch size of 0.25 mm. Similar to concave parts, the linear array has 7.5 MHz central frequency with 70% bandwidth at -6 dB. The linear array is optimized for US data acquisitions with planar waves. Hence, the array produces OA images with limited view artifacts due to reduced angular coverage which is a limiting factor for OA image acquisitions.
 
 ## Benchmarks
 
