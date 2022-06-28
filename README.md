@@ -27,13 +27,15 @@ Documentation: [Website Link](https://berkanlafci.github.io/oadat/)
 
 Experimental data contains raw signals with different transducer arrays and reconstructed OA images with different settings.
 
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/semiCircleImages_v1.png" width="1000" height="180">
+
 ### Simulated Data
 
 Scripts used to generate simulated acoustic pressure maps are available here: [OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)
 
-Virtual circle array images are shown in the figure below with different reconstruction schemes:
+Simulated virtual circle array images are shown in the figure below with different reconstruction schemes.
 - Full Sampling (1024 transducer elements)
-- Sparse 128, 
+- Sparse 128
 - Sparse 64
 - Sparse 32
 - Limited 128
