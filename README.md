@@ -76,9 +76,9 @@ We define 18 experiments based on 3 tasks (sparse reconstructions, limited view 
 
 Through a list of permutations of our datasets, we can define several pairs of varying difficulty of image translation experiments where target images are also available.
 
-**Sparse Reconstructions:** We present sparse reconstructions of both single wavelength forearm dataset (SWFD) and simulated cylinders dataset (SCD) for semi circle and virtual ring arrays. Accordingly, sparse sampling correction experiments learn mapping functions where the task is correction of sparse sampling (ss) artifacts from the reduced number of elements used for image reconstruction with different array geometries.
+- **Sparse Reconstructions:** We present sparse reconstructions of both single wavelength forearm dataset (SWFD) and simulated cylinders dataset (SCD) for semi circle and virtual ring arrays. Accordingly, sparse sampling correction experiments learn mapping functions where the task is correction of sparse sampling (ss) artifacts from the reduced number of elements used for image reconstruction with different array geometries.
 
-**Limited View:** Further, we offer limited view reconstructions for all datasets and for all arrays. Accordingly, limited view correction experiments learn mapping functions where the task is correction of limited view (lv) artifacts from the reduced angular coverage used for image reconstruction with different array geometries.
+- **Limited View:** Further, we offer limited view reconstructions for all datasets and for all arrays. Accordingly, limited view correction experiments learn mapping functions where the task is correction of limited view (lv) artifacts from the reduced angular coverage used for image reconstruction with different array geometries.
 
 ### Segmentation
 
