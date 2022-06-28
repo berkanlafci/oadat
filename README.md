@@ -90,7 +90,7 @@ Please cite to this work using the following Bibtex entry:
                 Deán-Ben, Xosé Luís and 
                 Razansky, Daniel and 
                 Perez-Cruz, Fernando},
-  title       = {{OADAT}: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing},
+  title       = {OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing},
   publisher   = {arXiv},
   year        = {2022},
   copyright   = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
