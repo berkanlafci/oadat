@@ -85,7 +85,6 @@ Citation
 Please cite to this work using the following Bibtex entry:
 ```
 @article{lafci2022oadat,
-
   author      = {Lafci, Berkan and 
                 Ozdemir, Firat and 
                 Deán-Ben, Xosé Luís and 
