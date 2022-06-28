@@ -1,5 +1,5 @@
-OADAT
-=======================================================
+# OADAT
+
 [![arXiv](https://img.shields.io/badge/Preprint-arXiv-b31b1b)](https://arxiv.org/abs/2206.08612)
 [![Documentation](https://img.shields.io/badge/Documentation-OADAT-brightgreen)](https://berkanlafci.github.io/oadat/)
 [![Data](https://img.shields.io/badge/Data-Research%20Collection-blue)](https://www.research-collection.ethz.ch/handle/20.500.11850/551512)
@@ -13,22 +13,21 @@ Dataset: Will be public in [ETH Zurich Research Collection](https://www.research
 
 Documentation: [Website Link](https://berkanlafci.github.io/oadat/)
 
-Features
--------------------------------------------------------
+## Features
+
 - **Experimental Data:** OADAT provides experimental clinical data of forearm raw signals and reconstructed images.
 - **Simulated Data:** The paper provides methods to simulate forearm acoustic pressure maps, raw signals and reconstructed images using optoacoustic forward model and backprojection reconstruction algorithm ([OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)). 
 - **Benchmarks:** 18 benchmark experiments are conducted for 3 different tasks, namely sparse acquisition, limited view and segmentation ([OADAT Evaluate](https://renkulab.io/gitlab/firat.ozdemir/oadat-evaluate)).   
 - **Reconstruction Algorithm:** We provide image reconstruction algorithm called backprojection to generate optoacoustic images from raw signals ([pyoat](https://github.com/berkanlafci/pyoat)).  
 - **Open Source:** All simulation, benchmarking and reconstruction algorithms are presented publicly. We provide easy-to-use scripts for data reading, simulations, reconstructions and benchmarks.
 
-Dataset
--------------------------------------------------------
+## Dataset
 
-**Experimental Data**  
+### Experimental Data
 
 Experimental data contains raw signals with different transducer arrays and reconstructed OA images with different settings.
 
-**Simulated Data**  
+### Simulated Data
 
 Scripts used to generate simulated acoustic pressure maps are available here: [OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)
 
@@ -49,32 +48,31 @@ vc, ss32 = virtual circle, sparse 32 ||
 vc, lv128 = virtual circle, limited view 128 ||
 linear = linear part of multisegment array
 
-Transducer Arrays
--------------------------------------------------------
+## Transducer Arrays
 
 Positions of all array elements are included in the oadat, under arrays subfolder.
 
-**Semi Circle**  
+### Semi Circle
 
 The clinical images acquired with semi circle array are reconstructed using full semi circle (256 transducer elements), sparse 128 (uniform sparsity), sparse 64 (uniform sparsity), sparse 32 (uniform sparsity) and limited view 128 (90 degrees angular coverage).
 
-**Multisegment**  
+### Multisegment
 
 The clinical images acquired with multisegment array are reconstructed using full multisegment (256 transducer elements) and linear part (128 transducer elements).
 
 The synthetic images simulated with multisegment array are reconstructed using full multisegment (256 transducer elements) and linear part (128 transducer elements).
 
-**Virtual Circle**  
+### Virtual Circle
+
 The array is generated to simulate images with 360 degree angular coverage which results in artifact free reconstructions. It contains 1024 transducer elements distributed over a full circle with equal distance. The radius of the transducer array is kept equal to semi circle array (40 mm) to allow comparison between simulations and experimental acquisitions.
 
-Benchmarks
--------------------------------------------------------
+## Benchmarks
 
 The network architectures and trained weights for benchmarking can be found here: [OADAT Evaluate](https://renkulab.io/gitlab/firat.ozdemir/oadat-evaluate)
 
 We define 18 experiments based on 3 tasks (sparse reconstructions, limited view corrections and segmentation). Sparse sampling and limited view corrections are grouped under image translation task.
 
-**Image Translation**
+### Image Translation
 
 Through a list of permutations of our datasets, we can define several pairs of varying difficulty of image translation experiments where target images are also available.
 
@@ -82,20 +80,18 @@ Through a list of permutations of our datasets, we can define several pairs of v
 
 - *Limited View:* Further, we offer limited view reconstructions for all datasets and for all arrays. Accordingly, limited view correction experiments learn mapping functions where the task is correction of limited view (lv) artifacts from the reduced angular coverage used for image reconstruction with different array geometries.
 
-**Segmentation**
+### Segmentation
 
 Simulated cylinders dataset (SCD) includes pixel annotations for skin curve, vessels and background. In addition to segmentation of these structures on the ideal reconstructions, we define segmentation task on sparse sampling and limited view reconstructions that contain the relevant artifacts encountered in experimental data. All data in segmentation task is generated from SCD and the objective is to match the ground truth annotations of the acoustic pressure map.
 
 
-Reconstruction Algorithms
--------------------------------------------------------
+## Reconstruction Algorithms
 
 Image reconstruction algorithms used in this project are included in the following package: [pyoat](https://github.com/berkanlafci/pyoat)  
 
 We use backprojection algorithm in this study to generate OA images from the acquired signals. The algorithm is based on delay and sum beamforming approach. First, a mesh grid is created for desired field of view. Then, the distance between the points of the mesh grid and transducer elements are calculated based on the known locations of the array elements and the pixels. Time of flight (TOF) is obtained through dividing the distance by the SoS values that are assigned based on the temperature of the imaging medium and tissue properties. The corresponding signals are picked from signal matrix based on TOF. Then, the signals are added up to create images. The clinical and simulated data are reconstructed with SoS of 1510 m/s in this study as the simulations and the experiments were done at the corresponding imaging medium temperature.
 
-Citation
--------------------------------------------------------
+## Citation
 
 Please cite to this work using the following Bibtex entry:
 ```
@@ -115,7 +111,7 @@ Please cite to this work using the following Bibtex entry:
 }
 ```
 
-License
--------------------------------------------------------
+## License
+
 The dataset is licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC-BY-NC).  
 pyoat package, oadat-evaluate, and oa-armsim projects are licensed under the MIT License.
