@@ -75,7 +75,9 @@ The network architectures and trained weights for benchmarking can be found here
 Reconstruction Algorithms
 -------------------------------------------------------
 
-Image reconstruction algorithms used in this project are included in the following package: [pyoat](https://github.com/berkanlafci/pyoat)
+Image reconstruction algorithms used in this project are included in the following package: [pyoat](https://github.com/berkanlafci/pyoat)  
+
+We use backprojection algorithm in this study to generate OA images from the acquired signals. This algorithm is based on delay and sum beamforming approach. First, a mesh grid is created to represent the imaged field of view. Then, the distance between the points of the mesh grid and transducer elements are calculated based on the known locations of the array elements. Time of flight is obtained through dividing the distance by the SoS values that are assigned based on the temperature of the imaging medium and tissue properties. The clinical and simulated data are reconstructed with SoS of 1510 m/s in this study as the simulations and the experiments were done at the corresponding imaging medium temperature.
 
 Citation
 -------------------------------------------------------
