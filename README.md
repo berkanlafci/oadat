@@ -31,7 +31,12 @@ Experimental data contains raw signals with different transducer arrays and reco
 
 Scripts used to generate simulated acoustic pressure maps are available here: [OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)
 
-Full Sampling (1024 transducer elements), Sparse 128, 64, 32 and Limited 128
+Virtual circle array images are shown in the figure below with different reconstruction schemes:
+- Full Sampling (1024 transducer elements)
+- Sparse 128, 
+- Sparse 64
+- Sparse 32
+- Limited 128
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/virtualRingImages_v1.png" width="1000" height="180">
 
