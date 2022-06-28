@@ -36,7 +36,10 @@ Full Sampling (1024 transducer elements), Sparse 128, 64, 32 and Limited 128
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/virtualRingImages_v1.png" width="1000" height="180">
 
-Distribution of features in simulated data are summarized in the figure below. The plots give information about (i) number of pixels (size) distribution for each vessel, (ii) number of vessels distribution in each image, (iii) PSNR values compared to full sampling virtual circle reconstructions (artifact free images).
+Distribution of features in simulated data are summarized in the figure below. The plots give information about:  
+- number of pixels (size) distribution for each vessel,  
+- number of vessels distribution in each image,  
+- PSNR values compared to full sampling virtual circle reconstructions (artifact free images).
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedDataStatistics_v1.png" width="1000" height="250">
 ms = multisegment ||
