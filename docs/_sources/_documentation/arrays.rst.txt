@@ -24,4 +24,4 @@ The array is central part of the multisegment array with 128 transducer elements
 Virtual Circle
 ------------------------------------------------------------
 
-The array is generated to simulate images with 360 degree angular coverage which results in artifact free reconstructions (Fig.~\ref{fig:simulated_data}a, main manuscript). It contains 1,024 transducer elements distributed over a full circle with equal distance. The radius of the transducer array is kept equal to semi circle array (40 mm) to allow comparison between simulations and experimental acquisitions.
+The array is generated to simulate images with 360 degree angular coverage which results in artifact free reconstructions. It contains 1,024 transducer elements distributed over a full circle with equal distance. The radius of the transducer array is kept equal to semi circle array (40 mm) to allow comparison between simulations and experimental acquisitions.

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Benchmarks &mdash; OADAT 1.0.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -13,7 +14,6 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -81,26 +81,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="benchmarks">
-<h1>Benchmarks<a class="headerlink" href="#benchmarks" title="Permalink to this heading"></a></h1>
+  <section id="benchmarks">
+<h1>Benchmarks<a class="headerlink" href="#benchmarks" title="Permalink to this headline"></a></h1>
 <p>We define 18 experiments based on 3 tasks (sparse reconstructions, limited view corrections and segmentation). Sparse sampling and limited view corrections are grouped under image translation task.</p>
-<div class="section" id="image-translation">
-<h2>Image Translation<a class="headerlink" href="#image-translation" title="Permalink to this heading"></a></h2>
+<section id="image-translation">
+<h2>Image Translation<a class="headerlink" href="#image-translation" title="Permalink to this headline"></a></h2>
 <p>Through a list of permutations of our datasets, we can define several pairs of varying difficulty of image translation experiments where target images are also available.</p>
-<div class="section" id="sparse-reconstructions">
-<h3>Sparse Reconstructions<a class="headerlink" href="#sparse-reconstructions" title="Permalink to this heading"></a></h3>
+<section id="sparse-reconstructions">
+<h3>Sparse Reconstructions<a class="headerlink" href="#sparse-reconstructions" title="Permalink to this headline"></a></h3>
 <p>We present sparse reconstructions of both single wavelength forearm dataset (SWFD) and simulated cylinders dataset (SCD) for semi circle and virtual ring arrays. Accordingly, sparse sampling correction experiments learn mapping functions where the task is correction of sparse sampling (ss) artifacts from the reduced number of elements used for image reconstruction with different array geometries.</p>
-</div>
-<div class="section" id="limited-view">
-<h3>Limited View<a class="headerlink" href="#limited-view" title="Permalink to this heading"></a></h3>
+</section>
+<section id="limited-view">
+<h3>Limited View<a class="headerlink" href="#limited-view" title="Permalink to this headline"></a></h3>
 <p>Further, we offer limited view reconstructions for all datasets and for all arrays.  Accordingly, limited view correction experiments learn mapping functions where the task is correction of limited view (lv) artifacts from the reduced angular coverage used for image reconstruction with different array geometries.</p>
-</div>
-</div>
-<div class="section" id="segmentation">
-<h2>Segmentation<a class="headerlink" href="#segmentation" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+<section id="segmentation">
+<h2>Segmentation<a class="headerlink" href="#segmentation" title="Permalink to this headline"></a></h2>
 <p>Simulated cylinders dataset (SCD) includes pixel annotations for skin curve, vessels and background. In addition to segmentation of these structures on the ideal reconstructions, we define segmentation task on sparse sampling and limited view reconstructions that contain the relevant artifacts encountered in experimental data. All data in segmentation task is generated from SCD and the objective is to match the ground truth annotations of the acoustic pressure map.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

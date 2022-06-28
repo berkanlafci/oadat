@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reconstruction &mdash; OADAT 1.0.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -13,7 +14,6 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -76,14 +76,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="reconstruction">
-<h1>Reconstruction<a class="headerlink" href="#reconstruction" title="Permalink to this heading"></a></h1>
+  <section id="reconstruction">
+<h1>Reconstruction<a class="headerlink" href="#reconstruction" title="Permalink to this headline"></a></h1>
 <p>Backprojection algorithm is used to reconstruct images presented in OADAT.</p>
-<div class="section" id="backprojection">
-<h2>Backprojection<a class="headerlink" href="#backprojection" title="Permalink to this heading"></a></h2>
+<section id="backprojection">
+<h2>Backprojection<a class="headerlink" href="#backprojection" title="Permalink to this headline"></a></h2>
 <p>We use backprojection algorithm in this study to generate OA images from the acquired signals presented in <a class="reference external" href="https://github.com/berkanlafci/pyoat">pyoat</a>. This algorithm is based on delay and sum beamforming approach. First, a mesh grid is created to represent the imaged field of view. Then, the distance between the points of the mesh grid and transducer elements are calculated based on the known locations of the array elements. Time of flight is obtained through dividing distance by the SoS values that are assigned based on the temperature of the imaging medium and tissue properties. The clinical and simulated data are reconstructed with SoS of 1510 m/s in this study as the simulations and the experiments were done at the corresponding imaging medium temperature.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

@@ -30,6 +30,10 @@ Experimental data contains raw signals with different transducer arrays and reco
 
 **Simulated Data**  
 
+Full Sampling (1024 transducer elements), Sparse 128, 64, 32 and Limited 128
+
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/virtualRingImages_v1.png" width="1000" height="180">
+
 Scripts used to generate simulated acoustic pressure maps are available here: [OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedDataStatistics_v1.png" width="1000" height="250">
@@ -56,10 +60,7 @@ The clinical images acquired with multisegment array are reconstructed using ful
 The synthetic images simulated with multisegment array are reconstructed using full multisegment (256 transducer elements) and linear part (128 transducer elements).
 
 **Virtual Circle**  
-
-Full Sampling (1024 transducer elements), Sparse 128, 64, 32 and Limited 128
-
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/virtualRingImages_v1.png" width="1000" height="180">
+The array is generated to simulate images with 360 degree angular coverage which results in artifact free reconstructions. It contains 1024 transducer elements distributed over a full circle with equal distance. The radius of the transducer array is kept equal to semi circle array (40 mm) to allow comparison between simulations and experimental acquisitions.
 
 Benchmarks
 -------------------------------------------------------
