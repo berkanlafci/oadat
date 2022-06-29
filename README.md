@@ -138,6 +138,9 @@ Please cite to this work using the following Bibtex entry:
   url         = {https://arxiv.org/abs/2206.08612}
 }
 ```
+## Acknowledgement
+
+This project is supported by Swiss Data Science Center (SDSC) grant C19-04.
 
 ## License
 
