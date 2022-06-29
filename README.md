@@ -38,7 +38,7 @@ Experimental semi circle array images are shown in the figure below with differe
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/semiCircleImages_v1.png" width="1000" height="180">
 
-Multisegment and linear array images  
+Experimental multisegment and linear array images are shown in the figure below.  
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/multisegmentImages_v1.png" width="335" height="180">
 
