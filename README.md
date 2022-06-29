@@ -48,7 +48,7 @@ Simulated virtual circle array images are shown in the figure below with differe
 
 Multisegment and linear array images  
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simualtedMultisegmentImages_v1.png" width="335" height="180">
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedMultisegmentImages_v1.png" width="335" height="180">
 
 Distribution of features in simulated data are summarized in the figure below. The plots give information about:  
 - number of pixels (size) distribution for each vessel,  
