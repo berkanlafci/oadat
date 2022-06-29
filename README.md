@@ -23,6 +23,8 @@ Documentation: [Website Link](https://berkanlafci.github.io/oadat/)
 
 ## Dataset
 
+We present three datasets (two experimental, one simulated) where each has several subcategories for the purpose of tackling different challenges present in the domain. Raw signal acquisition data that is used to reconstruct all images are also provided with the datasets.
+
 ### Experimental Data
 
 Experimental data contains raw signals with different transducer arrays and reconstructed OA images with different settings.
