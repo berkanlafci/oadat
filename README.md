@@ -27,7 +27,7 @@ We present three datasets (two experimental, one simulated) where each has sever
 
 ### Experimental Data
 
-Experimental data contains raw signals with different transducer arrays and reconstructed OA images with different settings.
+Single wavelength forearm dataset (SWFD) is collected using both multisegment and semi circle arrays from 14 volunteers at a single wavelength (1064 nm) for both arms. The choice of the wavelength is based on maximizing penetration depth for the dataset. For each array, volunteer, and arm, we acquired 1400 slices, creating a sum of 2 x 14 x 2 x 1400 = 78 400 unique signal matrices. It is important to note that despite the data being acquired from the same volunteers, signals between multisegment array and semi circle array are not paired due to physical constraints.
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/semiCircleImages_v1.png" width="1000" height="180">
 
