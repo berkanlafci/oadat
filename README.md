@@ -13,21 +13,21 @@ Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
 ## Features
 
-- **Experimental Data:** OADAT provides experimental clinical data of forearm raw signals and reconstructed images.
-- **Simulated Data:** The paper provides methods to simulate forearm acoustic pressure maps, raw signals and reconstructed images using optoacoustic forward model and backprojection reconstruction algorithm ([OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)). 
+- **Experimental Data:** OADAT provides experimental clinical data of forearm raw signals and reconstructed images.  
+- **Simulated Data:** The paper provides methods to simulate forearm acoustic pressure maps, raw signals and reconstructed images using optoacoustic forward model and backprojection reconstruction algorithm ([OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)).   
 - **Benchmarks:** 18 benchmark experiments are conducted for 3 different tasks, namely sparse acquisition, limited view and segmentation ([OADAT Evaluate](https://renkulab.io/gitlab/firat.ozdemir/oadat-evaluate)).   
 - **Reconstruction Algorithm:** We provide image reconstruction algorithm called backprojection to generate optoacoustic images from raw signals ([pyoat](https://github.com/berkanlafci/pyoat)).  
-- **Open Source:** All simulation, benchmarking and reconstruction algorithms are presented publicly. We provide easy-to-use scripts for data reading, simulations, reconstructions and benchmarks.
+- **Open Source:** All simulation, benchmarking and reconstruction algorithms are presented publicly. We provide easy-to-use scripts for data reading, simulations, reconstructions and benchmarks.  
 
 ## Dataset
 
-We present three datasets (two experimental, one simulated) where each has several subcategories for the purpose of tackling different challenges present in the domain. Raw signal acquisition data that is used to reconstruct all images are also provided with the datasets.
+We present three datasets (two experimental, one simulated) where each has several subcategories for the purpose of tackling different challenges present in the domain. Raw signal acquisition data that is used to reconstruct all images are also provided with the datasets.  
 
 ### Experimental Data
 
 Single wavelength forearm dataset (SWFD) is collected using both multisegment and semi circle arrays from 14 volunteers at a single wavelength (1064 nm) for both arms. The choice of the wavelength is based on maximizing penetration depth for the dataset. For each array, volunteer, and arm, we acquired 1400 slices, creating a sum of 2 x 14 x 2 x 1400 = 78 400 unique signal matrices. It is important to note that despite the data being acquired from the same volunteers, signals between multisegment array and semi circle array are not paired due to physical constraints.
 
-Experimental semi circle array images are shown in the figure below with different reconstruction schemes.
+Experimental semi circle array images are shown in the figure below with different reconstruction schemes.  
 - Full Sampling (256 elements)
 - Sparse 128
 - Sparse 64
@@ -62,13 +62,14 @@ Distribution of features in simulated data are summarized in the figure below. T
 - number of vessels distribution in each image,  
 - PSNR values compared to full sampling virtual circle reconstructions (artifact free images).
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedDataStatistics_v1.png" width="700" height="215">
-ms = multisegment ||
-vc, ss128 = virtual circle, sparse 128 ||
-vc, ss64 = virtual circle, sparse 64 ||
-vc, ss32 = virtual circle, sparse 32 ||
-vc, lv128 = virtual circle, limited view 128 ||
-linear = linear part of multisegment array
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedDataStatistics_v1.png" width="700" height="215">  
+
+**ms**: multisegment || 
+**vc, ss128**: virtual circle, sparse 128 || 
+**vc, ss64**: virtual circle, sparse 64 || 
+**vc, ss32**: virtual circle, sparse 32 ||  
+**vc, lv128**: virtual circle, limited view 128 || 
+**linear**: linear part of multisegment array
 
 ## Transducer Arrays
 
