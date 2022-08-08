@@ -138,11 +138,12 @@ The network architectures and trained weights for benchmarking can be found here
 Sample script to load a pretrained model:
 ```python
 import os
-os.chdir('oadat_evaluate') #changing working dir for fetching git LFS pretrained model weights.
+os.chdir('oadat_evaluate') # changing working dir for fetching git LFS pretrained model weights.
 from oadat_evaluate.src import utils as utils
-mpm_obj = utils.Manage_Pretrained_Models()
-task_str = 'seg_ss32,vc'
-model = mpm_obj.load_model(task_str=task_str)
+
+mpm_obj   = utils.Manage_Pretrained_Models()
+task_str  = 'seg_ss32,vc'
+model     = mpm_obj.load_model(task_str=task_str)
 ```
 
 We define 18 experiments based on 3 tasks (sparse reconstructions, limited view corrections and segmentation). Sparse sampling and limited view corrections are grouped under image translation task.
@@ -177,10 +178,11 @@ import os, sys
 os.chdir('oadat_evaluate') 
 sys.path.append('src')
 from oadat_evaluate.src import train_translation as train_translation
-datasets_parent_dir = '/data/oadat' # assuming datasets downloaded here.
-task_str = 'swfd_ss128,sc'
-logdir = '/trained_models/oadat_swfd_ss128,sc'
-args = train_translation.ExpSetup(datasets_parent_dir=datasets_parent_dir, task_str=task_str, logdir=logdir)
+
+datasets_parent_dir   = '/data/oadat' # assuming datasets downloaded here.
+task_str              = 'swfd_ss128,sc'
+logdir                = '/trained_models/oadat_swfd_ss128,sc'
+args                  = train_translation.ExpSetup(datasets_parent_dir=datasets_parent_dir, task_str=task_str, logdir=logdir)
 train_translation.train(args)
 ```
 Sample script to train semantic segmentation model from scratch for experiment `seg_ss64,vc`:  
@@ -189,10 +191,11 @@ import os, sys
 os.chdir('oadat_evaluate') 
 sys.path.append('src')
 from oadat_evaluate.src import train_segmentation as train_segmentation
-datasets_parent_dir = '/data/oadat' # assuming datasets downloaded here.
-task_str = 'seg_ss64,vc'
-logdir = '/trained_models/oadat_seg_ss64,vc'
-args = train_segmentation.ExpSetup(datasets_parent_dir=datasets_parent_dir, task_str=task_str, logdir=logdir)
+
+datasets_parent_dir   = '/data/oadat' # assuming datasets downloaded here.
+task_str              = 'seg_ss64,vc'
+logdir                = '/trained_models/oadat_seg_ss64,vc'
+args                  = train_segmentation.ExpSetup(datasets_parent_dir=datasets_parent_dir, task_str=task_str, logdir=logdir)
 train_segmentation.train(args)
 ```
 
