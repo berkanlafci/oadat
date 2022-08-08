@@ -105,8 +105,9 @@ prng                          = np.random.RandomState(seed)
 sim_ellipses_obj              = utils.GenerateVesselsAndSkinAndMasks(resolutionXY=resolutionXY, cylinder_size_max=cylinder_size_max, cylinder_size_min=cylinder_size_min, max_depth_cylinder_from_skin=max_depth_cylinder_from_skin, numEllipsesMax=numEllipsesMax, lims_rot_x=lims_rot_x, lims_rot_y=lims_rot_y, skin_noise_min=skin_noise_min, skin_noise_max=skin_noise_max, behind_skin_noise=behind_skin_noise, vessel_noise=vessel_noise, prng=prng)  
 acoustic_pressure_map, gt_multichannel = sim_ellipses_obj.generate()
 
-gt_skin, gt_vessels = gt_multichannel[...,0], gt_multichannel[...,1]
+gt_skin, gt_vessels           = gt_multichannel[...,0], gt_multichannel[...,1]
 labels = utils.process_vessel_and_skinline(v=gt_vessels, sl=gt_skin)
+
 # Picture above has output in the order (acoustic_presure_map, labels, gt_skin, gt_vessels)
 ```
 ___
