@@ -87,8 +87,9 @@ import os, sys, numpy as np
 os.chdir('oadat_evaluate') 
 sys.path.append('src')
 from oa_armsim.src import utils as utils
-seed=99
-resolutionXY = 256 ## acoustic pressure map is a square 
+
+seed              = 99
+resolutionXY      = 256 ## acoustic pressure map is a square 
 cylinder_size_max = 15 # pixels
 cylinder_size_min = 1 # pixels
 max_depth_cylinder_from_skin = 90
