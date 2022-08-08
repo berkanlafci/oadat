@@ -106,7 +106,7 @@ sim_ellipses_obj              = utils.GenerateVesselsAndSkinAndMasks(resolutionX
 acoustic_pressure_map, gt_multichannel = sim_ellipses_obj.generate()
 
 gt_skin, gt_vessels           = gt_multichannel[...,0], gt_multichannel[...,1]
-labels = utils.process_vessel_and_skinline(v=gt_vessels, sl=gt_skin)
+labels                        = utils.process_vessel_and_skinline(v=gt_vessels, sl=gt_skin)
 
 # Picture above has output in the order (acoustic_presure_map, labels, gt_skin, gt_vessels)
 ```
