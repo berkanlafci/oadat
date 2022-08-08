@@ -88,20 +88,21 @@ os.chdir('oadat_evaluate')
 sys.path.append('src')
 from oa_armsim.src import utils as utils
 
-seed              = 99
-resolutionXY      = 256 ## acoustic pressure map is a square 
-cylinder_size_max = 15 # pixels
-cylinder_size_min = 1 # pixels
-max_depth_cylinder_from_skin = 90
-numEllipsesMax = 8 #not used anymore
-lims_rot_x = 80 ## max rotation along x-axis (axis parallel to skinline), high values can lead to vessels being parallel to imaging plane  
-lims_rot_y = 30 ## max rotation along y-axis (axis orthogonal to skinline)
-behind_skin_noise = True
-skin_noise_min = 10 #pixels
-skin_noise_max = 40 #pixels
-vessel_noise = True
-prng = np.random.RandomState(seed)
-sim_ellipses_obj = utils.GenerateVesselsAndSkinAndMasks(resolutionXY=resolutionXY, cylinder_size_max=cylinder_size_max, cylinder_size_min=cylinder_size_min, max_depth_cylinder_from_skin=max_depth_cylinder_from_skin, numEllipsesMax=numEllipsesMax, lims_rot_x=lims_rot_x, lims_rot_y=lims_rot_y, skin_noise_min=skin_noise_min, skin_noise_max=skin_noise_max, behind_skin_noise=behind_skin_noise, vessel_noise=vessel_noise, prng=prng)  
+seed                          = 99
+resolutionXY                  = 256 # acoustic pressure map is a square 
+cylinder_size_max             = 15 # pixels
+cylinder_size_min             = 1 # pixels
+max_depth_cylinder_from_skin  = 90
+numEllipsesMax                = 8 # not used anymore
+lims_rot_x                    = 80 # max rotation along x-axis (axis parallel to skinline), high values can lead to vessels being parallel to imaging plane  
+lims_rot_y                    = 30 # max rotation along y-axis (axis orthogonal to skinline)
+behind_skin_noise             = True
+skin_noise_min                = 10 # pixels
+skin_noise_max                = 40 # pixels
+vessel_noise                  = True
+prng                          = np.random.RandomState(seed)
+
+sim_ellipses_obj              = utils.GenerateVesselsAndSkinAndMasks(resolutionXY=resolutionXY, cylinder_size_max=cylinder_size_max, cylinder_size_min=cylinder_size_min, max_depth_cylinder_from_skin=max_depth_cylinder_from_skin, numEllipsesMax=numEllipsesMax, lims_rot_x=lims_rot_x, lims_rot_y=lims_rot_y, skin_noise_min=skin_noise_min, skin_noise_max=skin_noise_max, behind_skin_noise=behind_skin_noise, vessel_noise=vessel_noise, prng=prng)  
 acoustic_pressure_map, gt_multichannel = sim_ellipses_obj.generate()
 
 gt_skin, gt_vessels = gt_multichannel[...,0], gt_multichannel[...,1]
@@ -183,6 +184,7 @@ datasets_parent_dir   = '/data/oadat' # assuming datasets downloaded here.
 task_str              = 'swfd_ss128,sc'
 logdir                = '/trained_models/oadat_swfd_ss128,sc'
 args                  = train_translation.ExpSetup(datasets_parent_dir=datasets_parent_dir, task_str=task_str, logdir=logdir)
+
 train_translation.train(args)
 ```
 Sample script to train semantic segmentation model from scratch for experiment `seg_ss64,vc`:  
@@ -196,6 +198,7 @@ datasets_parent_dir   = '/data/oadat' # assuming datasets downloaded here.
 task_str              = 'seg_ss64,vc'
 logdir                = '/trained_models/oadat_seg_ss64,vc'
 args                  = train_segmentation.ExpSetup(datasets_parent_dir=datasets_parent_dir, task_str=task_str, logdir=logdir)
+
 train_segmentation.train(args)
 ```
 
@@ -223,11 +226,13 @@ os.chdir('oadat_evaluate')
 sys.path.append('src')
 from oadat_evaluate.src import utils as utils
 from oadat_evaluate.src import eval_translation as eval_translation
-mpm_obj = utils.Manage_Pretrained_Models()
-task_str = 'swfd_lv128,li'
-datasets_parent_dir = '/data/oadat' # assuming datasets downloaded here.
-fname_out = '/trained_models/oadat_swfd_ss128,sc/eval.p'
-model = mpm_obj.load_model(task_str=task_str)
+
+mpm_obj               = utils.Manage_Pretrained_Models()
+task_str              = 'swfd_lv128,li'
+datasets_parent_dir   = '/data/oadat' # assuming datasets downloaded here.
+fname_out             = '/trained_models/oadat_swfd_ss128,sc/eval.p'
+model                 = mpm_obj.load_model(task_str=task_str)
+
 eval_translation.eval(model, task_str, datasets_parent_dir, fname_out)
 ```
 
@@ -238,12 +243,14 @@ os.chdir('oadat_evaluate')
 sys.path.append('src')
 from oadat_evaluate.src import utils as utils
 from oadat_evaluate.src import eval_segmentation as eval_segmentation
-mpm_obj = utils.Manage_Pretrained_Models()
-task_str = 'seg_ss64,vc'
-datasets_parent_dir = '/data/oadat' # assuming datasets downloaded here.
-fname_out = '/trained_models/oadat_seg_ss64,vc/eval.p'
+
+mpm_obj               = utils.Manage_Pretrained_Models()
+task_str              = 'seg_ss64,vc'
+datasets_parent_dir   = '/data/oadat' # assuming datasets downloaded here.
+fname_out             = '/trained_models/oadat_seg_ss64,vc/eval.p'
 path_serialized_model = '/trained_models/oadat_seg_ss64,vc/serialized_model_step_80000' ##assuming path to the serialized custom model
-model = tf.keras.models.load_model(path_serialized_model, compile=False)
+model                 = tf.keras.models.load_model(path_serialized_model, compile=False)
+
 eval_segmentation.eval(model, task_str, datasets_parent_dir, fname_out)
 ```
 
@@ -258,14 +265,15 @@ import os, sys
 os.chdir('oadat_evaluate') 
 sys.path.append('src')
 from oadat_evaluate.src import generators as generators
-datasets_parent_dir = '/data/oadat' # assuming datasets downloaded here.
-fname_dataset = 'SWFD_semicircle_RawBP.h5' ## example for SWFD semi circle dataset
-fname_h5 = os.path.join(datasets_parent_dir, fname_dataset)
-inds = None # if not None, generator will be limited to the provided dataset indices.
-in_key = 'sc,ss32_BP' # example for semi circle sparse 32 images 
-out_key = 'sc_BP' # example for semi circle array images
-gen = generators.Generator_Paired_Input_Output(fname_h5=fname_h5, inds=inds, in_key=in_key, out_key=out_key, shuffle=True)
-x, y = gen[42] # returns (in_key, out_key) tuple for 42th index in the dataset.
+
+datasets_parent_dir   = '/data/oadat' # assuming datasets downloaded here.
+fname_dataset         = 'SWFD_semicircle_RawBP.h5' # example for SWFD semi circle dataset
+fname_h5              = os.path.join(datasets_parent_dir, fname_dataset)
+inds                  = None # if not None, generator will be limited to the provided dataset indices.
+in_key                = 'sc,ss32_BP' # example for semi circle sparse 32 images 
+out_key               = 'sc_BP' # example for semi circle array images
+gen                   = generators.Generator_Paired_Input_Output(fname_h5=fname_h5, inds=inds, in_key=in_key, out_key=out_key, shuffle=True)
+x, y                  = gen[42] # returns (in_key, out_key) tuple for 42th index in the dataset.
 ```
 
 ___
