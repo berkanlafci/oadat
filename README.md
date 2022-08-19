@@ -7,9 +7,9 @@
 
 OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing
 
-Paper: [arXiv Link](https://arxiv.org/abs/2206.08612)  
-Documentation: [Website Link](https://berkanlafci.github.io/oadat/)  
-Data: Will be public in [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/handle/20.500.11850/551512) upon paper acceptance.  
+Paper : [arXiv Link](https://arxiv.org/abs/2206.08612)  
+Documentation : [Website Link](https://berkanlafci.github.io/oadat/)  
+Data : [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/handle/20.500.11850/551512) (upon paper acceptance) 
 
 ## Features
 
