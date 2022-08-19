@@ -69,7 +69,7 @@ Distribution of features in simulated data are summarized in the figure below. T
 - number of vessels distribution in each image,  
 - PSNR values compared to full sampling virtual circle reconstructions (artifact free images).
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedDataStatistics_v1.png" width="700" height="215">  
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedDataStatistics_v2.png" width="1000" height="250">  
 
 **ms**: multisegment || 
 **vc, ss128**: virtual circle, sparse 128 || 
