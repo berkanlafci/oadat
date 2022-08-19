@@ -45,20 +45,12 @@ We present three datasets (two experimental, one simulated) where each has sever
 Single wavelength forearm dataset (SWFD) is collected using both multisegment and semi circle arrays from 14 volunteers at a single wavelength (1064 nm) for both arms. The choice of the wavelength is based on maximizing penetration depth for the dataset. For each array, volunteer, and arm, we acquired 1400 slices, creating a sum of 2 x 14 x 2 x 1400 = 78 400 unique signal matrices. It is important to note that despite the data being acquired from the same volunteers, signals between multisegment array and semi circle array are not paired due to physical constraints.
 
 Experimental semi circle array images are shown in the figure below with different reconstruction schemes.  
-- Full Sampling (256 elements)
-- Limited 128
-- Sparse 128
-- Sparse 64
-- Sparse 32
+Full Sampling (256 elements), Limited 128, Sparse 128, Sparse 64, Sparse 32
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/semiCircleImages_v2.png" width="1000" height="180">
 
 Experimental multisegment array images are shown in the figure below with different reconstruction schemes.  
-- Full Sampling (256 elements)
-- Linear
-- Sparse 128
-- Sparse 64
-- Sparse 32
+Full Sampling (256 elements), Limited 128, Sparse 128, Sparse 64, Sparse 32
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/multisegmentImages_v2.png" width="1000" height="180">
 
@@ -67,21 +59,12 @@ Experimental multisegment array images are shown in the figure below with differ
 Scripts used to generate simulated acoustic pressure maps are available here: [OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)
 
 Simulated virtual circle array images are shown in the figure below with different reconstruction schemes.
-- Full Sampling (1024 elements)
-- Limited 128
-- Sparse 128
-- Sparse 64
-- Sparse 32
-
+Full Sampling (1024 elements), Limited 128, Sparse 128, Sparse 64, Sparse 32
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/virtualRingImages_v3.png" width="1000" height="180">
 
 Simulated multisegment array images are shown in the figure below with different reconstruction schemes.  
-- Full Sampling (256 elements)
-- Linear
-- Sparse 128
-- Sparse 64
-- Sparse 32
+Full Sampling (256 elements), Linear (128 elements), Sparse 128, Sparse 64, Sparse 32
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedMultisegmentImages_v2.png" width="1000" height="180">
 
