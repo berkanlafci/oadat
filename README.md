@@ -60,7 +60,7 @@ Experimental multisegment array images are shown in the figure below with differ
 - Sparse 64
 - Sparse 32
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/multisegmentImages_v2.png" width="335" height="180">
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/multisegmentImages_v2.png" width="1000" height="180">
 
 ### Simulated Data
 
@@ -83,7 +83,7 @@ Simulated multisegment array images are shown in the figure below with different
 - Sparse 64
 - Sparse 32
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedMultisegmentImages_v2.png" width="335" height="180">
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedMultisegmentImages_v2.png" width="1000" height="180">
 
 Distribution of features in simulated data are summarized in the figure below. The plots give information about:  
 - number of pixels (size) distribution for each vessel,  
