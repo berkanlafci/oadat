@@ -1,0 +1,3 @@
+include README.md
+include oadat/arrays/*.mat
+include oaat/docs
