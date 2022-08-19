@@ -46,16 +46,21 @@ Single wavelength forearm dataset (SWFD) is collected using both multisegment an
 
 Experimental semi circle array images are shown in the figure below with different reconstruction schemes.  
 - Full Sampling (256 elements)
+- Limited 128
 - Sparse 128
 - Sparse 64
 - Sparse 32
-- Limited 128
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/semiCircleImages_v1.png" width="1000" height="180">
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/semiCircleImages_v2.png" width="1000" height="180">
 
-Experimental multisegment and linear array images are shown in the figure below.  
+Experimental multisegment array images are shown in the figure below with different reconstruction schemes.  
+- Full Sampling (256 elements)
+- Linear
+- Sparse 128
+- Sparse 64
+- Sparse 32
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/multisegmentImages_v1.png" width="335" height="180">
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/multisegmentImages_v2.png" width="335" height="180">
 
 ### Simulated Data
 
@@ -63,16 +68,22 @@ Scripts used to generate simulated acoustic pressure maps are available here: [O
 
 Simulated virtual circle array images are shown in the figure below with different reconstruction schemes.
 - Full Sampling (1024 elements)
+- Limited 128
 - Sparse 128
 - Sparse 64
 - Sparse 32
-- Limited 128
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/virtualRingImages_v1.png" width="1000" height="180">
 
-Simulated multisegment and linear array images are shown in the figure below.  
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/virtualRingImages_v3.png" width="1000" height="180">
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedMultisegmentImages_v1.png" width="335" height="180">
+Simulated multisegment array images are shown in the figure below with different reconstruction schemes.  
+- Full Sampling (256 elements)
+- Linear
+- Sparse 128
+- Sparse 64
+- Sparse 32
+
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/simulatedMultisegmentImages_v2.png" width="335" height="180">
 
 Distribution of features in simulated data are summarized in the figure below. The plots give information about:  
 - number of pixels (size) distribution for each vessel,  
