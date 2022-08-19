@@ -18,6 +18,23 @@ Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 - **Benchmarks:** 18 benchmark experiments are conducted for 3 different tasks, namely sparse acquisition, limited view and segmentation ([OADAT Evaluate](https://renkulab.io/gitlab/firat.ozdemir/oadat-evaluate)).   
 - **Reconstruction Algorithm:** We provide image reconstruction algorithm called backprojection to generate optoacoustic images from raw signals ([pyoat](https://github.com/berkanlafci/pyoat)).  
 - **Open Source:** All simulation, benchmarking and reconstruction algorithms are presented publicly. We provide easy-to-use scripts for data reading, simulations, reconstructions and benchmarks.  
+
+___
+## Installation
+
+To use the provided codes, please follow the steps below.
+
+Clone the repository
+```bash
+git clone https://github.com/berkanlafci/oadat.git
+```
+
+Initialize submodules (oa_armsim and oadat_evaluate)
+```bash
+git submodule init  
+git submodule update
+```
+
 ___
 ## Dataset
 
