@@ -122,7 +122,7 @@ ___
 
 Positions of all array elements are included in the oadat, under arrays subfolder.
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/transducerArrays_v1.png" width="1000" height="220">
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/transducerArrays_v1.png" width="1000" height="215">
 
 ### Virtual Circle
 
