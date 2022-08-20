@@ -84,7 +84,7 @@ ___
 ### Demo
 A demo file showcasing how to generate synthetic acoustic pressure maps and ground truth annotation maps of background, vessels, and skin curve is shown in file [demo.ipynb](oa_armsim/notebooks/demo.ipynb)
 
-<img src="https://renkulab.io/gitlab/firat.ozdemir/oa-armsim/-/raw/master/resources/sample.jpg" width="800" height="210">
+<img src="https://renkulab.io/gitlab/firat.ozdemir/oa-armsim/-/raw/master/resources/sample.jpg" width="1000" height="240">
 
 Using GenerateVesselsAndSkinAndMasks class under [oa_armsim/src/utils.py](oa_armsim/src/utils.py), first define an object with the desired hyperparameters. 
 Then use generate() attribute of the object. 
@@ -122,7 +122,7 @@ ___
 
 Positions of all array elements are included in the oadat, under arrays subfolder.
 
-<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/transducerArrays_v1.png" width="800" height="210">
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/transducerArrays_v1.png" width="1000" height="240">
 
 ### Virtual Circle
 
