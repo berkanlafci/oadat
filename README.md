@@ -11,6 +11,8 @@ Paper : [arXiv Link](https://arxiv.org/abs/2206.08612)
 Documentation : [Website Link](https://berkanlafci.github.io/oadat/)  
 Data : [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/handle/20.500.11850/551512) (upon paper acceptance) 
 
+<img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/pipelineFigure_v1.png" width="1000" height="250">  
+
 ## Features
 
 - **Experimental Data:** OADAT provides experimental clinical data of forearm raw signals and reconstructed images.  
