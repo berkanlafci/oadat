@@ -1,6 +1,3 @@
-[submodule "oadat_evaluate"]
-	path = oadat_evaluate
-	url = https://renkulab.io/gitlab/firat.ozdemir/oadat-evaluate.git
 [submodule "oa_armsim"]
 	path = oa_armsim
 	url = https://renkulab.io/gitlab/firat.ozdemir/oa-armsim.git
