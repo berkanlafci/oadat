@@ -1,13 +1,13 @@
 # OADAT
 
-[![arXiv](https://img.shields.io/badge/Preprint-arXiv-b31b1b)](https://arxiv.org/abs/2206.08612)
+[![OpenReview](https://img.shields.io/badge/Paper-OpenReview-b31b1b)](https://openreview.net/forum?id=BVi6MhKO0G)
 [![Documentation](https://img.shields.io/badge/Documentation-OADAT-brightgreen)](https://berkanlafci.github.io/oadat/)
 [![Data](https://img.shields.io/badge/Data-Research%20Collection-blue)](https://www.research-collection.ethz.ch/handle/20.500.11850/551512)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)  
 
 OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing
 
-Paper : [arXiv Link](https://arxiv.org/abs/2206.08612)  
+Paper : [OpenReview Link](https://openreview.net/forum?id=BVi6MhKO0G)  
 Documentation : [Website Link](https://berkanlafci.github.io/oadat/)  
 Data : [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/handle/20.500.11850/551512) (upon paper acceptance) 
 
