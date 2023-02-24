@@ -297,20 +297,15 @@ ___
 ## Citation
 
 Please cite to this work using the following Bibtex entry:
+
 ```
-@article{lafci2022oadat,
-  author      = {Lafci, Berkan and 
-                Ozdemir, Firat and 
-                Deán-Ben, Xosé Luís and 
-                Razansky, Daniel and 
-                Perez-Cruz, Fernando},
-  title       = {OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing},
-  publisher   = {arXiv},
+@article{ozdemir2022oadat,
+  title       = {{OADAT}: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing},
+  author      = {Firat Ozdemir and Berkan Lafci and Xose Luis Dean-Ben and Daniel Razansky and Fernando Perez-Cruz},
+  journal     = {Transactions on Machine Learning Research},
+  issn        = {2835-8856},
   year        = {2022},
-  copyright   = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
-  journal     = {arXiv preprint arXiv:2206.08612},
-  doi         = {10.48550/ARXIV.2206.08612},
-  url         = {https://arxiv.org/abs/2206.08612}
+  url         = {https://openreview.net/forum?id=BVi6MhKO0G}
 }
 ```
 ## Acknowledgement
