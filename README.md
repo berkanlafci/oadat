@@ -9,7 +9,7 @@ OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Im
 
 Paper : [OpenReview Link](https://openreview.net/forum?id=BVi6MhKO0G)  
 Documentation : [Website Link](https://berkanlafci.github.io/oadat/)  
-Data : [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/handle/20.500.11850/551512) (upon paper acceptance) 
+Data : [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/handle/20.500.11850/551512) 
 
 <img src="https://github.com/berkanlafci/oadat/blob/main/docs/images/pipelineFigure_v1.png" width="1000" height="320">  
 
