@@ -16,8 +16,8 @@ Data : [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/
 ## Features
 
 - **Experimental Data:** OADAT provides experimental clinical data of forearm raw signals and reconstructed images.  
-- **Simulated Data:** The paper provides methods to simulate forearm acoustic pressure maps, raw signals and reconstructed images using optoacoustic forward model and backprojection reconstruction algorithm ([OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)).   
-- **Benchmarks:** 18 benchmark experiments are conducted for 3 different tasks, namely sparse acquisition, limited view and segmentation ([OADAT Evaluate](https://renkulab.io/gitlab/firat.ozdemir/oadat-evaluate)).   
+- **Simulated Data:** The paper provides methods to simulate forearm acoustic pressure maps, raw signals and reconstructed images using optoacoustic forward model and backprojection reconstruction algorithm ([OA Armsim](https://gitlab.renkulab.io/firat.ozdemir/oa-armsim)).   
+- **Benchmarks:** 18 benchmark experiments are conducted for 3 different tasks, namely sparse acquisition, limited view and segmentation ([OADAT Evaluate](https://gitlab.renkulab.io/firat.ozdemir/oadat-evaluate)).   
 - **Reconstruction Algorithm:** We provide image reconstruction algorithm called backprojection to generate optoacoustic images from raw signals ([pyoat](https://github.com/berkanlafci/pyoat)).  
 - **Open Source:** All simulation, benchmarking and reconstruction algorithms are presented publicly. We provide easy-to-use scripts for data reading, simulations, reconstructions and benchmarks.  
 
@@ -56,7 +56,7 @@ Experimental multisegment array images are shown in the figure below with differ
 
 ### Simulated Data
 
-Scripts used to generate simulated acoustic pressure maps are available here: [OA Armsim](https://renkulab.io/gitlab/firat.ozdemir/oa-armsim)
+Scripts used to generate simulated acoustic pressure maps are available here: [OA Armsim](https://gitlab.renkulab.io/firat.ozdemir/oa-armsim)
 
 Simulated virtual circle array images are shown in the figure below with different reconstruction schemes.  
 
@@ -86,7 +86,7 @@ ___
 ### Demo
 A demo file showcasing how to generate synthetic acoustic pressure maps and ground truth annotation maps of background, vessels, and skin curve is shown in file [demo.ipynb](oa_armsim/notebooks/demo.ipynb)
 
-<img src="https://renkulab.io/gitlab/firat.ozdemir/oa-armsim/-/raw/master/resources/sample.jpg" width="1000" height="220">
+<img src="https://gitlab.renkulab.io/firat.ozdemir/oa-armsim/-/raw/master/resources/sample.jpg" width="1000" height="220">
 
 Using GenerateVesselsAndSkinAndMasks class under [oa_armsim/src/utils.py](oa_armsim/src/utils.py), first define an object with the desired hyperparameters. 
 Then use generate() attribute of the object. 
@@ -144,7 +144,7 @@ The array is central part of the multisegment array with 128 transducer elements
 ___
 ## Benchmarks
 
-The network architectures and trained weights for benchmarking can be found here: [OADAT Evaluate](https://renkulab.io/gitlab/firat.ozdemir/oadat-evaluate)
+The network architectures and trained weights for benchmarking can be found here: [OADAT Evaluate](https://gitlab.renkulab.io/firat.ozdemir/oadat-evaluate)
 
 Sample script to load a pretrained model:
 ```python
