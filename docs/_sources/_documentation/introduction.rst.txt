@@ -13,6 +13,6 @@ OA imaging has been shown to provide unique capabilities in preclinical studies 
 
 | 1. large and varied clinical and simulated forearm datasets with paired subsampled or limited view image reconstruction counterparts
 | 2. raw signal acquisition data of each such image reconstruction
-| 3. definition of 18 experiments with gold standards focusing on the aforementioned OA challenges
+| 3. definition of 44 experiments with gold standards focusing on the aforementioned OA challenges
 | 4. pretrained model weights of the networks used for each task
 | 5. user-friendly scripts to load and evaluate the networks on our datasets.
