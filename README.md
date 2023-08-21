@@ -17,7 +17,7 @@ Data : [ETH Zurich Research Collection](https://www.research-collection.ethz.ch/
 
 - **Experimental Data:** OADAT provides experimental clinical data of forearm raw signals and reconstructed images.  
 - **Simulated Data:** The paper provides methods to simulate forearm acoustic pressure maps, raw signals and reconstructed images using optoacoustic forward model and backprojection reconstruction algorithm ([OA Armsim](https://gitlab.renkulab.io/firat.ozdemir/oa-armsim)).   
-- **Benchmarks:** 18 benchmark experiments are conducted for 3 different tasks, namely sparse acquisition, limited view and segmentation ([OADAT Evaluate](https://gitlab.renkulab.io/firat.ozdemir/oadat-evaluate)).   
+- **Benchmarks:** 44 benchmark experiments are conducted for 3 different tasks, namely sparse acquisition, limited view and segmentation ([OADAT Evaluate](https://gitlab.renkulab.io/firat.ozdemir/oadat-evaluate)).   
 - **Reconstruction Algorithm:** We provide image reconstruction algorithm called backprojection to generate optoacoustic images from raw signals ([pyoat](https://github.com/berkanlafci/pyoat)).  
 - **Open Source:** All simulation, benchmarking and reconstruction algorithms are presented publicly. We provide easy-to-use scripts for data reading, simulations, reconstructions and benchmarks.  
 
@@ -157,7 +157,7 @@ task_str  = 'seg_ss32,vc'
 model     = mpm_obj.load_model(task_str=task_str)
 ```
 
-We define 18 experiments based on 3 tasks (sparse reconstructions, limited view corrections and segmentation). Sparse sampling and limited view corrections are grouped under image translation task.
+We define 44 experiments based on 3 tasks (sparse reconstructions, limited view corrections and segmentation). Sparse sampling and limited view corrections are grouped under image translation task.
 
 ### Image Translation
 
