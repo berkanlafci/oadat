@@ -3,7 +3,7 @@
 Benchmarks
 ===================================================
 
-We define 18 experiments based on 3 tasks (sparse reconstructions, limited view corrections and segmentation). Sparse sampling and limited view corrections are grouped under image translation task.
+We define 44 experiments based on 3 tasks (sparse reconstructions, limited view corrections and segmentation). Sparse sampling and limited view corrections are grouped under image translation task.
 
 ------------------------------------------------------------
 Image Translation

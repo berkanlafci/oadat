@@ -3,7 +3,7 @@
 Arrays
 =================
 
-Transducer arrays used in data acquisitions. The files in "arrays" folder contain the position of individual transducer elements that are needed for image reconstruction.
+Transducer arrays used in data acquisitions are explained in this section. The files in "arrays" folder contain the position of individual transducer elements that are needed for image reconstruction.
 
 ------------------------------------------------------------
 Semi Circle

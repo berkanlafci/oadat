@@ -2,7 +2,7 @@
 =================
 Datasets
 =================
-Datasets will be available in `ETH Zurich Research Collection <https://www.research-collection.ethz.ch/handle/20.500.11850/551512>`_ upon paper acceptance.
+Datasets are available in `ETH Zurich Research Collection <https://www.research-collection.ethz.ch/handle/20.500.11850/551512>`_.
 
 We present three datasets (two experimental, one simulated) where each has several subcategories for the purpose of tackling different challenges present in the domain. Raw signal acquisition data that is used to reconstruct all images are also provided with the datasets.
 
@@ -10,7 +10,7 @@ We present three datasets (two experimental, one simulated) where each has sever
 Multispectral Forearm Dataset
 ------------------------------------------------------------
 
-Multispectral forearm dataset (MSFD) is collected using multisegment array from nine volunteers at six different wavelengths (700, 730, 760, 780, 800, 850 nm) for both arms. Selected wavelengths are particularly aimed for spectral decomposition aiming to separate oxy- and deoxy-hemoglobin. All wavelengths are acquired consecutively, yielding almost identical scene being captured for a given slice across different wavelengths with slight displacement errors. For each of the mentioned category 1,400 slices are captured, creating a sum of 9 x 6 x 2 x 1400 = 151 200 unique signal matrices.
+Multispectral forearm dataset (MSFD) is collected using multisegment array from nine volunteers at six different wavelengths (700, 730, 760, 780, 800, 850 nm) for both arms. Selected wavelengths are particularly aimed for spectral decomposition to separate oxy- and deoxy-hemoglobin. All wavelengths are acquired consecutively, yielding almost identical scene being captured for a given slice across different wavelengths with slight displacement errors. For each of the mentioned category 1,400 slices are captured, creating a sum of 9 x 6 x 2 x 1400 = 151 200 unique signal matrices.
 
 ------------------------------------------------------------
 Single Wavelength Forearm Dataset
