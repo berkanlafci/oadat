@@ -2,7 +2,7 @@
 =================
 Datasets
 =================
-Datasets are available in `ETH Zurich Research Collection <https://www.research-collection.ethz.ch/handle/20.500.11850/551512>`_.
+Datasets are available in `ETH Zurich Research Collection <https://doi.org/10.3929/ethz-b-000551512>`_.
 
 We present three datasets (two experimental, one simulated) where each has several subcategories for the purpose of tackling different challenges present in the domain. Raw signal acquisition data that is used to reconstruct all images are also provided with the datasets.
 
